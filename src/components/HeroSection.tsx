@@ -5,19 +5,19 @@ import { Clock, Zap, FileCheck, CheckCircle, FileText } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-green-50 to-blue-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-green-50 to-blue-50 py-20 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-gray-900 leading-tight px-2 sm:px-0">
                 <span className="text-green-600">5 minutos</span> para enquadrar seu
                 <span className="text-blue-600"> licenciamento ambiental</span>
               </h1>
               
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed px-2 sm:px-0">
                 Receba pelo WhatsApp: enquadramento preliminar, check-list personalizado e 
                 modelos de documentos técnicos. Tudo automatizado por IA em menos de 5 minutos.
               </p>
@@ -26,17 +26,17 @@ const HeroSection = () => {
 
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg">
                 Ver planos
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg">
                 Testar Grátis no WhatsApp →
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-4 px-2 sm:px-0">
               <div className="flex items-center text-sm text-gray-600">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                 Sem necessidade de cadastro
