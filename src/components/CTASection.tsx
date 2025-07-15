@@ -13,8 +13,8 @@ const CTASection = () => {
             Otimize o tempo no licenciamento ambiental
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed px-2 sm:px-4">
-            Teste agora mesmo pelo WhatsApp. Em 5 minutos você vai ter tudo que precisa 
-            para começar seu próximo projeto de licenciamento ambiental.
+            Automatize seu processo de licenciamento e economize até 30 horas por projeto. 
+            Comece hoje mesmo e transforme sua produtividade.
           </p>
         </div>
 
@@ -39,13 +39,15 @@ const CTASection = () => {
           <Button 
             size="lg" 
             className="bg-green-600 text-white hover:bg-green-700 px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-xl shadow-xl"
+            asChild
           >
-            <Smartphone className="w-5 h-5 sm:w-6 sm:h-6 mr-1 sm:mr-2" />
-            Testar Grátis no WhatsApp
-            <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-1 sm:ml-2" />
+            <a href="#precos">
+              Assinar agora
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-1 sm:ml-2" />
+            </a>
           </Button>
           <p className="text-gray-600 text-xs sm:text-sm mt-4 px-2 sm:px-0">
-            Sem cadastro • Sem cartão de crédito • Resultado instantâneo
+            Comece hoje • Cancele quando quiser • Pagamento 100% seguro
           </p>
         </div>
 

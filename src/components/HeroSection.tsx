@@ -5,16 +5,16 @@ import { Clock, Zap, FileCheck, CheckCircle, FileText } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-green-50 to-blue-50 py-20 overflow-x-hidden">
+    <section className="bg-gradient-to-br from-green-50 to-blue-50 py-12 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-4 sm:space-y-6">
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-gray-900 leading-tight px-2 sm:px-0">
-                <span className="text-green-600">5 minutos</span> para enquadrar seu
-                <span className="text-blue-600"> licenciamento ambiental</span>
+                <span className="text-blue-600">5 minutos</span> para enquadrar seu
+                <span className="text-green-600"> licenciamento ambiental</span>
               </h1>
               
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed px-2 sm:px-0">
@@ -27,11 +27,11 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg">
-                Ver planos
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg" asChild>
+                <a href="#precos">Ver planos</a>
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg">
-                Testar Grátis no WhatsApp →
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg" asChild>
+                <a href="#como-funciona">Testar Grátis no WhatsApp →</a>
               </Button>
             </div>
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-4 px-2 sm:px-0">
               <div className="flex items-center text-sm text-gray-600">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                Sem necessidade de cadastro
+                Comece agora mesmo, sem burocracias
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
@@ -56,11 +56,11 @@ const HeroSection = () => {
                   <Clock className="w-6 h-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Enquadramento em 5 Minutos</h3>
-                  <p className="text-gray-600 text-sm">
-                    IA analisa seu empreendimento e determina qual licença ambiental é necessária
-                  </p>
-                  <div className="text-xs text-green-600 font-medium mt-2">Economiza: 2 horas*</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Enquadramento em 5 Minutos</h3>
+                                      <p className="text-gray-600 text-base">
+                      IA analisa seu empreendimento e determina qual licença ambiental é necessária
+                    </p>
+                  <div className="text-sm text-green-600 font-medium mt-2">Economiza: 2 horas*</div>
                 </div>
               </div>
             </div>
@@ -71,11 +71,11 @@ const HeroSection = () => {
                   <FileCheck className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Check-list Automatizado</h3>
-                  <p className="text-gray-600 text-sm">
-                    Lista personalizada de documentos baseada na legislação do seu estado
-                  </p>
-                  <div className="text-xs text-blue-600 font-medium mt-2">Economiza: 8 horas*</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Check-list Automatizado</h3>
+                                      <p className="text-gray-600 text-base">
+                      Lista personalizada de documentos baseada na legislação do seu estado
+                    </p>
+                  <div className="text-sm text-blue-600 font-medium mt-2">Economiza: 8 horas*</div>
                 </div>
               </div>
             </div>
@@ -86,11 +86,11 @@ const HeroSection = () => {
                   <FileText className="w-6 h-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Modelos de Documentos</h3>
-                  <p className="text-gray-600 text-sm">
-                    Templates técnicos estruturados para o tipo de licença específica
-                  </p>
-                  <div className="text-xs text-purple-600 font-medium mt-2">Economiza: 10-20 horas*</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Modelos de Documentos</h3>
+                                      <p className="text-gray-600 text-base">
+                      Templates técnicos estruturados para o tipo de licença específica
+                    </p>
+                  <div className="text-sm text-purple-600 font-medium mt-2">Economiza: 10-20 horas*</div>
                 </div>
               </div>
             </div>

@@ -179,12 +179,13 @@ const DemoSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-12 sm:mt-16">
-          <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 text-base sm:text-lg">
-            <Smartphone className="w-5 h-5 mr-2" />
-            Testar Agora no WhatsApp
+          <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 text-base sm:text-lg" asChild>
+            <a href="#precos">
+              Assinar agora
+            </a>
           </Button>
           <p className="text-sm text-gray-500 mt-2 px-4">
-            Grátis • Sem cadastro • Resultado em 5 minutos
+            Comece hoje • Cancele quando quiser • Pagamento 100% seguro
           </p>
           <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto px-4">
             O que antes levava horas de pesquisa e análise, agora você recebe automaticamente em minutos.
