@@ -28,10 +28,10 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg">
-                Testar Grátis no WhatsApp →
+                Ver planos
               </Button>
               <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg">
-                Ver Demonstração
+                Testar Grátis no WhatsApp →
               </Button>
             </div>
 
