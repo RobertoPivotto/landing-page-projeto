@@ -42,7 +42,7 @@ const PricingSection = () => {
         "Atualizações automáticas da legislação",
         "Histórico de projetos"
       ],
-      timeSavings: "Economiza 15h por projeto",
+      timeSavings: "Economiza 20-30h por projeto",
       cta: "Começar Agora",
       ctaVariant: "default" as const,
       popular: true,
@@ -56,11 +56,11 @@ const PricingSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Quanto vale 15 horas do seu tempo?
+            Quanto vale 20-30 horas do seu tempo?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Se você cobra R$ 150/hora, nossa ferramenta se paga no primeiro projeto. 
-            Todo mês você economiza centenas de horas.
+            Todo mês você economiza centenas de horas com 20-30h por projeto.
           </p>
           
           {/* Limited Time Offer */}
@@ -75,7 +75,7 @@ const PricingSection = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Calcule sua economia</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
-              <div className="text-3xl font-bold text-blue-600">15h</div>
+              <div className="text-3xl font-bold text-blue-600">20-30h</div>
               <div className="text-sm text-gray-600">economizadas por projeto</div>
             </div>
             <div>
@@ -83,12 +83,12 @@ const PricingSection = () => {
               <div className="text-sm text-gray-600">seu valor/hora</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">= R$ 2.250</div>
+              <div className="text-3xl font-bold text-purple-600">= R$ 3.000-4.500</div>
               <div className="text-sm text-gray-600">economia por projeto</div>
             </div>
           </div>
           <p className="text-gray-600 mt-4 text-sm">
-            Com apenas 1 projeto por mês, você economiza 37x o valor da assinatura
+            Com apenas 1 projeto por mês, você economiza 50-75x o valor da assinatura
           </p>
         </div>
 

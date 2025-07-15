@@ -29,7 +29,7 @@ const CTASection = () => {
             <div className="text-green-100">Para ter tudo pronto</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-            <div className="text-3xl font-bold text-white mb-2">15h+</div>
+            <div className="text-3xl font-bold text-white mb-2">20-30h+</div>
             <div className="text-green-100">Economizadas por projeto</div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const CTASection = () => {
           </div>
           <p className="text-green-100 text-sm">
             Enquanto você pesquisa legislação e estrutura documentos manualmente, 
-            outros consultores já estão economizando 15+ horas por projeto.
+            outros consultores já estão economizando 20-30+ horas por projeto.
           </p>
         </div>
 
