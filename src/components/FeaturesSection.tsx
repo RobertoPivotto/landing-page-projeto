@@ -8,7 +8,7 @@ const FeaturesSection = () => {
       icon: MessageSquare,
       title: "Enquadramento Preliminar",
       description: "IA determina qual licença ambiental seu empreendimento precisa",
-      timesSaved: "2 horas por projeto",
+      timesSaved: "2 horas por projeto*",
       benefits: [
         "Análise automática da atividade econômica",
         "Identificação do tipo de licença necessária", 
@@ -19,7 +19,7 @@ const FeaturesSection = () => {
       icon: CheckCircle,
       title: "Check-list Personalizado",
       description: "Lista completa de documentos necessários para sua licença",
-      timesSaved: "8 horas por projeto",
+      timesSaved: "8 horas por projeto*",
       benefits: [
         "Baseado na legislação do seu estado",
         "Personalizado para sua atividade específica",
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
       icon: FileText,
       title: "Modelos de Documentos",
       description: "Templates técnicos estruturados para acelerar sua documentação",
-      timesSaved: "10-20 horas por projeto",
+      timesSaved: "10-20 horas por projeto*",
       benefits: [
         "Estrutura adequada para cada tipo de licença",
         "Baseado em casos de sucesso",
@@ -123,6 +123,7 @@ const FeaturesSection = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Economize 20-30+ horas em cada projeto
             </h3>
+            <p className="text-sm text-gray-500 mb-4">*Tempo total estimado</p>
             <p className="text-gray-600 mb-6">
               Teste agora mesmo pelo WhatsApp. Sem cadastro, sem compromisso.
             </p>

@@ -92,7 +92,7 @@ const CTASection = () => {
           </div>
           <p className="text-green-100 text-sm">
             Enquanto você pesquisa legislação e estrutura documentos manualmente, 
-            outros consultores já estão economizando 20-30+ horas por projeto.
+            outros consultores já estão economizando 20-30+ horas por projeto*.
           </p>
         </div>
 

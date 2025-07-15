@@ -42,7 +42,7 @@ const PricingSection = () => {
         "Atualizações automáticas da legislação",
         "Histórico de projetos"
       ],
-      timeSavings: "Economiza 20-30h por projeto",
+      timeSavings: "Economiza 20-30h por projeto*",
       cta: "Começar Agora",
       ctaVariant: "default" as const,
       popular: true,
@@ -60,7 +60,7 @@ const PricingSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Se você cobra R$ 150/hora, nossa ferramenta se paga no primeiro projeto. 
-            Todo mês você economiza centenas de horas com 20-30h por projeto.
+            Todo mês você economiza centenas de horas com 20-30h por projeto*.
           </p>
           
           {/* Limited Time Offer */}

@@ -13,7 +13,7 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
               <Zap className="w-4 h-4 mr-2" />
-              Economize 20-30+ horas por projeto
+              Economize 20-30+ horas por projeto*
             </div>
 
             {/* Headline */}
@@ -80,7 +80,7 @@ const HeroSection = () => {
                   <p className="text-gray-600 text-sm">
                     IA analisa seu empreendimento e determina qual licença ambiental é necessária
                   </p>
-                  <div className="text-xs text-green-600 font-medium mt-2">Economiza: 2 horas</div>
+                  <div className="text-xs text-green-600 font-medium mt-2">Economiza: 2 horas*</div>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ const HeroSection = () => {
                   <p className="text-gray-600 text-sm">
                     Lista personalizada de documentos baseada na legislação do seu estado
                   </p>
-                  <div className="text-xs text-blue-600 font-medium mt-2">Economiza: 8 horas</div>
+                  <div className="text-xs text-blue-600 font-medium mt-2">Economiza: 8 horas*</div>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@ const HeroSection = () => {
                   <p className="text-gray-600 text-sm">
                     Templates técnicos estruturados para o tipo de licença específica
                   </p>
-                  <div className="text-xs text-purple-600 font-medium mt-2">Economiza: 10-20 horas</div>
+                  <div className="text-xs text-purple-600 font-medium mt-2">Economiza: 10-20 horas*</div>
                 </div>
               </div>
             </div>
