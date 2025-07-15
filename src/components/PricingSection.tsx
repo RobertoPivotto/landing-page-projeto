@@ -8,8 +8,9 @@ const PricingSection = () => {
   const [hourlyRate, setHourlyRate] = useState(150);
 
   // Calcular economia baseada no valor/hora
-  const minSavings = Math.round(20 * hourlyRate);
-  const maxSavings = Math.round(30 * hourlyRate);
+  const activeRate = hourlyRate || 150; // Use 150 como fallback para cálculos
+  const minSavings = Math.round(20 * activeRate);
+  const maxSavings = Math.round(30 * activeRate);
   const multiplier = Math.round(minSavings / 49.9); // Baseado no preço do plano Pro
 
   const plans = [
@@ -89,34 +90,46 @@ const PricingSection = () => {
         </div>
 
         {/* ROI Calculator */}
-        <div className="bg-blue-50 rounded-2xl p-8 mb-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Calcule sua economia</h3>
-          <div className="grid md:grid-cols-3 gap-6">
+        <div className="bg-blue-50 rounded-2xl p-6 sm:p-8 mb-12 text-center mx-4 sm:mx-0">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Calcule sua economia</h3>
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
             <div>
-              <div className="text-3xl font-bold text-blue-600">20-30h</div>
-              <div className="text-sm text-gray-600">economizadas por projeto</div>
+              <div className="text-2xl sm:text-3xl font-bold text-blue-600">20-30h</div>
+              <div className="text-xs sm:text-sm text-gray-600">economizadas por projeto</div>
             </div>
             <div className="relative">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <span className="text-3xl font-bold text-green-600">× R$</span>
-                <div className="bg-white rounded-lg border-2 border-green-200 px-3 py-2 shadow-sm hover:border-green-400 transition-colors flex items-center gap-1">
+              <div className="flex items-center justify-center gap-1 sm:gap-2 mb-2">
+                <span className="text-2xl sm:text-3xl font-bold text-green-600">× R$</span>
+                <div className="bg-white rounded-lg border-2 border-green-200 px-2 sm:px-3 py-1 sm:py-2 shadow-sm hover:border-green-400 transition-colors flex items-center gap-1">
                   <Edit3 className="w-3 h-3 text-green-600" />
                   <input
                     type="number"
-                    value={hourlyRate}
-                    onChange={(e) => setHourlyRate(Number(e.target.value) || 150)}
+                    value={hourlyRate || ''}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      if (value === '' || value === '0') {
+                        setHourlyRate(0);
+                      } else {
+                        setHourlyRate(Number(value) || 1);
+                      }
+                    }}
+                    onBlur={(e) => {
+                      if (e.target.value === '' || Number(e.target.value) === 0) {
+                        setHourlyRate(150);
+                      }
+                    }}
                     placeholder="150"
-                    className="text-xl font-bold text-green-600 bg-transparent w-16 text-center focus:outline-none"
+                    className="text-lg sm:text-xl font-bold text-green-600 bg-transparent w-12 sm:w-16 text-center focus:outline-none"
                     min="0"
                     step="1"
                   />
                 </div>
               </div>
-              <div className="text-sm text-gray-600">Clique para editar seu valor/hora</div>
+              <div className="text-xs sm:text-sm text-gray-600">Clique para editar seu valor/hora</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
-              <div className="text-sm text-gray-600">economia por projeto</div>
+              <div className="text-2xl sm:text-3xl font-bold text-purple-600">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
+              <div className="text-xs sm:text-sm text-gray-600">economia por projeto</div>
             </div>
           </div>
           <p className="text-green-600 mt-4 text-lg font-bold">
@@ -125,13 +138,13 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-6xl mx-auto px-4">
           {plans.map((plan, index) => (
             <div 
               key={index} 
               className={`bg-white rounded-2xl shadow-lg border-2 ${
-                plan.highlight ? 'border-green-500 relative scale-105' : 'border-gray-200'
-              } p-8 hover:shadow-xl transition-all flex flex-col`}
+                plan.highlight ? 'border-green-500 relative md:scale-105' : 'border-gray-200'
+              } p-6 sm:p-8 hover:shadow-xl transition-all flex flex-col`}
             >
               {/* Popular Badge */}
               {plan.popular && (
