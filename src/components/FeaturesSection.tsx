@@ -119,15 +119,15 @@ const FeaturesSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-10">
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">
               Economize 20-30+ horas em cada projeto
             </h3>
-            <p className="text-sm text-gray-500 mb-4">*Tempo total estimado</p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-base text-gray-600 font-medium mb-6">*Tempo total estimado</p>
+            <p className="text-lg text-gray-700 mb-8">
               Teste agora mesmo pelo WhatsApp. Sem cadastro, sem compromisso.
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-lg font-semibold text-xl transition-colors">
               Testar Grátis no WhatsApp
             </button>
           </div>
