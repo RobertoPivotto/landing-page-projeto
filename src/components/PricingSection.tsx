@@ -1,10 +1,17 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, Zap, Star } from 'lucide-react';
 
 const PricingSection = () => {
+  const [hourlyRate, setHourlyRate] = useState(150);
+
+  // Calcular economia baseada no valor/hora
+  const minSavings = Math.round(20 * hourlyRate);
+  const maxSavings = Math.round(30 * hourlyRate);
+  const multiplier = Math.round(minSavings / 59.9); // Baseado no preço do plano Pro
+
   const plans = [
     {
       name: "Free",
@@ -79,16 +86,26 @@ const PricingSection = () => {
               <div className="text-sm text-gray-600">economizadas por projeto</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-green-600">× R$ 150</div>
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-3xl font-bold text-green-600">× R$</span>
+                <input
+                  type="number"
+                  value={hourlyRate}
+                  onChange={(e) => setHourlyRate(Number(e.target.value) || 0)}
+                  className="text-3xl font-bold text-green-600 bg-transparent border-b-2 border-green-600 w-20 text-center focus:outline-none focus:border-green-700"
+                  min="0"
+                  step="1"
+                />
+              </div>
               <div className="text-sm text-gray-600">seu valor/hora</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">= R$ 3.000-4.500</div>
+              <div className="text-3xl font-bold text-purple-600">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
               <div className="text-sm text-gray-600">economia por projeto</div>
             </div>
           </div>
           <p className="text-gray-600 mt-4 text-sm">
-            Com apenas 1 projeto por mês, você economiza 50-75x o valor da assinatura
+            Com apenas 1 projeto por mês, você economiza {multiplier}x o valor da assinatura
           </p>
         </div>
 
