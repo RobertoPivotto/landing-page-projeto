@@ -177,7 +177,7 @@ const FeaturesSection = () => {
             <p className="text-lg text-gray-700 mb-8">
               Teste agora mesmo pelo WhatsApp. Sem cadastro, sem compromisso.
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-10 py-3 rounded-lg font-semibold text-xl transition-colors">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 md:px-8 py-3 rounded-lg font-semibold text-lg sm:text-xl transition-colors">
               Testar Grátis no WhatsApp
             </button>
           </div>

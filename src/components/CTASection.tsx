@@ -5,14 +5,14 @@ import { Clock, CheckCircle, ArrowRight, Smartphone } from 'lucide-react';
 
 const CTASection = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-green-50 to-blue-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="py-24 bg-gradient-to-br from-green-50 to-blue-50 overflow-x-hidden">
+      <div className="max-w-4xl mx-auto px-2 sm:px-4 lg:px-8 text-center">
         {/* Header */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900 px-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900 px-2 sm:px-4">
             Otimize o tempo no licenciamento ambiental
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed px-4">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed px-2 sm:px-4">
             Teste agora mesmo pelo WhatsApp. Em 5 minutos você vai ter tudo que precisa 
             para começar seu próximo projeto de licenciamento ambiental.
           </p>
@@ -35,16 +35,16 @@ const CTASection = () => {
         </div>
 
         {/* Main CTA */}
-        <div className="mb-8">
+        <div className="mb-8 px-2 sm:px-0">
           <Button 
             size="lg" 
-            className="bg-green-600 text-white hover:bg-green-700 px-10 py-4 text-xl font-semibold rounded-xl shadow-xl"
+            className="bg-green-600 text-white hover:bg-green-700 px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-lg sm:text-xl font-semibold rounded-xl shadow-xl"
           >
-            <Smartphone className="w-6 h-6 mr-2" />
+            <Smartphone className="w-5 h-5 sm:w-6 sm:h-6 mr-1 sm:mr-2" />
             Testar Grátis no WhatsApp
-            <ArrowRight className="w-6 h-6 ml-2" />
+            <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-1 sm:ml-2" />
           </Button>
-          <p className="text-gray-600 text-sm mt-4">
+          <p className="text-gray-600 text-xs sm:text-sm mt-4 px-2 sm:px-0">
             Sem cadastro • Sem cartão de crédito • Resultado instantâneo
           </p>
         </div>
