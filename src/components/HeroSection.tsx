@@ -114,23 +114,6 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-
-            {/* Tempo Total Estimado - Destaque */}
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 border-2 border-green-200">
-              <div className="text-center">
-                <div className="flex items-center justify-center space-x-2 mb-3">
-                  <Clock className="w-6 h-6 text-green-600" />
-                  <h3 className="text-lg font-bold text-gray-900">Tempo Total Estimado</h3>
-                </div>
-                <div className="text-3xl font-bold text-green-600 mb-2">20-30 horas</div>
-                <p className="text-sm text-gray-600">
-                  economizadas por projeto completo
-                </p>
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium mt-3">
-                  ⚡ Retorno do investimento imediato
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
