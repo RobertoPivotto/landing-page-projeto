@@ -21,45 +21,51 @@ const DemoSection = () => {
 
             {/* Demo Features */}
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="bg-green-100 rounded-lg p-3">
-                  <MessageSquare className="w-6 h-6 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">1. Envie seus dados</h3>
-                  <p className="text-gray-600">
-                    Descreva sua atividade, localização e porte do empreendimento 
-                    em uma mensagem simples no WhatsApp.
-                  </p>
-                  <div className="text-sm text-green-600 font-medium mt-1">⏱️ 2 minutos</div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 rounded-lg p-3">
-                  <Zap className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">2. IA processa instantaneamente</h3>
-                  <p className="text-gray-600">
-                    Nossa IA analisa sua atividade, consulta a legislação do estado 
-                    e determina qual licença você precisa.
-                  </p>
-                  <div className="text-sm text-blue-600 font-medium mt-1">⏱️ 1 minuto</div>
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-100 rounded-lg p-3">
+                    <MessageSquare className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">1. Envie seus dados</h3>
+                    <p className="text-gray-600 text-sm">
+                      Descreva sua atividade, localização e porte do empreendimento 
+                      em uma mensagem simples no WhatsApp.
+                    </p>
+                    <div className="text-xs text-green-600 font-medium mt-2">⏱️ 2 minutos</div>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-purple-100 rounded-lg p-3">
-                  <FileText className="w-6 h-6 text-purple-600" />
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-100 rounded-lg p-3">
+                    <Zap className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">2. IA processa instantaneamente</h3>
+                    <p className="text-gray-600 text-sm">
+                      Nossa IA analisa sua atividade, consulta a legislação do estado 
+                      e determina qual licença você precisa.
+                    </p>
+                    <div className="text-xs text-blue-600 font-medium mt-2">⏱️ 1 minuto</div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">3. Receba tudo pronto</h3>
-                  <p className="text-gray-600">
-                    Enquadramento preliminar, check-list personalizado e modelos 
-                    de documentos chegam no seu WhatsApp.
-                  </p>
-                  <div className="text-sm text-purple-600 font-medium mt-1">⏱️ 2 minutos</div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-purple-100 rounded-lg p-3">
+                    <FileText className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">3. Receba tudo pronto</h3>
+                    <p className="text-gray-600 text-sm">
+                      Enquadramento preliminar, check-list personalizado e modelos 
+                      de documentos chegam no seu WhatsApp.
+                    </p>
+                    <div className="text-xs text-purple-600 font-medium mt-2">⏱️ 2 minutos</div>
+                  </div>
                 </div>
               </div>
             </div>
