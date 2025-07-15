@@ -74,14 +74,14 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="precos" className="py-24 bg-gradient-to-br from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="precos" className="py-24 bg-gradient-to-br from-gray-50 to-white overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-2 sm:px-4">
             Quanto vale 20-30 horas do seu tempo?
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8 px-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 px-2 sm:px-4">
             Se você cobra R$ 150/hora, nossa ferramenta se paga no primeiro projeto. 
             Todo mês você economiza centenas de horas com 20-30h por projeto*.
           </p>
@@ -90,7 +90,7 @@ const PricingSection = () => {
         </div>
 
         {/* ROI Calculator */}
-        <div className="bg-blue-50 rounded-2xl p-6 sm:p-8 mb-12 text-center mx-4 sm:mx-0">
+        <div className="bg-blue-50 rounded-2xl p-4 sm:p-6 md:p-8 mb-12 text-center mx-2 sm:mx-4 md:mx-0">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Calcule sua economia</h3>
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
             <div>
@@ -128,7 +128,7 @@ const PricingSection = () => {
               <div className="text-xs sm:text-sm text-gray-600">Clique para editar seu valor/hora</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold text-purple-600">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
+              <div className="text-lg sm:text-2xl md:text-3xl font-bold text-purple-600 break-words">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
               <div className="text-xs sm:text-sm text-gray-600">economia por projeto</div>
             </div>
           </div>
@@ -138,13 +138,13 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-6xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-sm md:max-w-6xl mx-auto px-2 sm:px-4">
           {plans.map((plan, index) => (
             <div 
               key={index} 
               className={`bg-white rounded-2xl shadow-lg border-2 ${
                 plan.highlight ? 'border-green-500 relative md:scale-105' : 'border-gray-200'
-              } p-6 sm:p-8 hover:shadow-xl transition-all flex flex-col`}
+              } p-4 sm:p-6 md:p-8 hover:shadow-xl transition-all flex flex-col`}
             >
               {/* Popular Badge */}
               {plan.popular && (
