@@ -138,7 +138,7 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-sm md:max-w-6xl mx-auto px-2 sm:px-4">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-6 mb-12 sm:mb-16 max-w-sm md:max-w-6xl mx-auto px-2 sm:px-4">
           {plans.map((plan, index) => (
             <div 
               key={index} 
