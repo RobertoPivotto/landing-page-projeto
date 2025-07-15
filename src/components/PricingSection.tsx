@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Clock, Zap, Star } from 'lucide-react';
+import { CheckCircle, Clock, Zap, Star, Edit3 } from 'lucide-react';
 
 const PricingSection = () => {
   const [hourlyRate, setHourlyRate] = useState(150);
@@ -85,19 +85,24 @@ const PricingSection = () => {
               <div className="text-3xl font-bold text-blue-600">20-30h</div>
               <div className="text-sm text-gray-600">economizadas por projeto</div>
             </div>
-            <div>
-              <div className="flex items-center justify-center space-x-2">
-                <span className="text-3xl font-bold text-green-600">× R$</span>
-                <input
-                  type="number"
-                  value={hourlyRate}
-                  onChange={(e) => setHourlyRate(Number(e.target.value) || 0)}
-                  className="text-3xl font-bold text-green-600 bg-transparent border-b-2 border-green-600 w-20 text-center focus:outline-none focus:border-green-700"
-                  min="0"
-                  step="1"
-                />
+            <div className="relative">
+              <div className="text-3xl font-bold text-green-600 mb-2">× R$</div>
+              <div className="bg-white rounded-lg border-2 border-green-200 p-3 shadow-sm hover:border-green-400 transition-colors">
+                <div className="flex items-center space-x-2">
+                  <Edit3 className="w-4 h-4 text-green-600" />
+                  <input
+                    type="number"
+                    value={hourlyRate}
+                    onChange={(e) => setHourlyRate(Number(e.target.value) || 0)}
+                    placeholder="150"
+                    className="text-xl font-bold text-green-600 bg-transparent w-full text-center focus:outline-none"
+                    min="0"
+                    step="1"
+                  />
+                </div>
+                <div className="text-xs text-gray-500 mt-1">Clique para editar</div>
               </div>
-              <div className="text-sm text-gray-600">seu valor/hora</div>
+              <div className="text-sm text-gray-600 mt-2">seu valor/hora</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">= R$ {minSavings.toLocaleString()}-{maxSavings.toLocaleString()}</div>
