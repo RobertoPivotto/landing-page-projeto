@@ -6,7 +6,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/lovable-uploads/66c2cfda-c756-4f79-9175-30bcdd51e7ea.png" alt="Licenc.IA" className="h-16 sm:h-24 md:h-32 w-auto object-fill" />
+            <img src="/lovable-uploads/66c2cfda-c756-4f79-9175-30bcdd51e7ea.png" alt="Licenc.IA" className="h-20 sm:h-24 md:h-32 w-auto object-fill" />
           </div>
 
           {/* Navigation */}
@@ -30,7 +30,12 @@ const Header = () => {
             <Button variant="ghost" className="text-gray-600 hover:text-green-600 text-xs sm:text-sm px-1 sm:px-2 md:px-4 hidden sm:inline-flex">
               Entrar
             </Button>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-2 sm:px-3 md:px-6 text-xs sm:text-sm">
+            {/* Mobile: Entrar button */}
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-2 sm:px-3 md:px-6 text-xs sm:text-sm sm:hidden">
+              Entrar
+            </Button>
+            {/* Desktop: Criar conta button */}
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-2 sm:px-3 md:px-6 text-xs sm:text-sm hidden sm:inline-flex">
               Criar conta
             </Button>
           </div>
