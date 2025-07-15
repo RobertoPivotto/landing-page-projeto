@@ -10,40 +10,20 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
-              <Zap className="w-4 h-4 mr-2" />
-              Economize 20-30+ horas por projeto*
-            </div>
-
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 <span className="text-green-600">5 minutos</span> para enquadrar seu
                 <span className="text-blue-600"> licenciamento ambiental</span>
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                 Receba pelo WhatsApp: enquadramento preliminar, check-list personalizado e 
                 modelos de documentos técnicos. Tudo automatizado por IA em menos de 5 minutos.
               </p>
             </div>
 
-            {/* Time Savings */}
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">20-30h</div>
-                <div className="text-sm text-gray-600">Economizadas por projeto</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">5min</div>
-                <div className="text-sm text-gray-600">Para enquadramento completo</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-800">95%</div>
-                <div className="text-sm text-gray-600">Menos tempo em análises</div>
-              </div>
-            </div>
+
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
@@ -56,13 +36,13 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 pt-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-4">
               <div className="flex items-center text-sm text-gray-600">
-                <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                 Sem necessidade de cadastro
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                 Resultado instantâneo
               </div>
             </div>
@@ -112,6 +92,14 @@ const HeroSection = () => {
                   </p>
                   <div className="text-xs text-purple-600 font-medium mt-2">Economiza: 10-20 horas*</div>
                 </div>
+              </div>
+            </div>
+            
+            {/* Badge moved from left column */}
+            <div className="flex justify-center mt-6">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 text-sm font-medium">
+                <Zap className="w-4 h-4 mr-2" />
+                Economize 20-30+ horas por projeto*
               </div>
             </div>
           </div>
