@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Clock, Zap, FileCheck, CheckCircle } from 'lucide-react';
+import { Clock, Zap, FileCheck, CheckCircle, FileText } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -100,10 +100,10 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex items-start space-x-4">
-                <div className="bg-white rounded-lg p-3">
-                  <div className="w-6 h-6 text-green-600 font-bold">📄</div>
+                <div className="bg-purple-100 rounded-lg p-3">
+                  <FileText className="w-6 h-6 text-purple-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Modelos de Documentos</h3>
